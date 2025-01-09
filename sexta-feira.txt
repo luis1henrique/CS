@@ -1,0 +1,10 @@
+using System.Runtime.InteropServices;
+    Console.WriteLine("que dia e hoje?");
+    string reposta = Console.ReadLine();
+
+if(reposta == "sexta"){
+    Console.WriteLine("sextouuuuuu");
+}
+else{
+    Console.WriteLine("você vai trabalhar");
+}

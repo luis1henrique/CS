@@ -1,0 +1,6 @@
+int repetição = 0;
+while(repetição < 10){
+    Console.WriteLine("olá, mundo");
+    repetição++;
+    
+}

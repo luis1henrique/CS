@@ -1,0 +1,24 @@
+using System.Security.AccessControl;
+
+float media = 28f;
+    Console.WriteLine("1° bimestre");
+        string primeiro = Console.ReadLine();
+    Console.WriteLine("2° bimestre");
+        string segundo = Console.ReadLine();
+    Console.WriteLine("3° bimestre");
+        string terceiro = Console.ReadLine();
+    Console.WriteLine("4° bimestre");
+        string quarto = Console.ReadLine();
+
+float pri = float.Parse(primeiro);
+float seg = float.Parse(segundo);
+float ter = float.Parse(terceiro);
+float qua = float.Parse(quarto);
+
+float cal = pri + seg + ter + qua;
+
+if(cal >= media){
+    Console.WriteLine($"nota:{cal} passou");
+}else{
+    Console.WriteLine($"nota:{cal} recuperação");
+}
