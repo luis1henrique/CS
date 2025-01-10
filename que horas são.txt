@@ -1,0 +1,46 @@
+Console.WriteLine("que horas são?");
+    int hora = int.Parse(Console.ReadLine());
+
+
+        
+            if( hora >= 6 && hora <= 12 ){
+                Console.WriteLine("manhã");
+            }
+            else if(hora >= 13 && hora <= 18){
+                Console.WriteLine("tarde");
+            }
+            else if(hora >= 19 && hora <= 24){
+                Console.WriteLine("noite");
+            }
+            else{
+                Console.WriteLine("madrugada");
+            }
+
+_____________________________________________________________________________
+
+
+Console.WriteLine("que horas são?");
+    int hora = int.Parse(Console.ReadLine());
+    string periodo;
+
+        
+        switch (hora){
+		case int h when (h >= 6 && h < 12):
+		periodo = "manhã";
+		break;
+			
+		case int h when (h >= 13 && h < 18):
+		periodo = "tarde";
+		break;
+
+		case int h when (h >= 19 && h < 24):
+		periodo = "noite";
+		break;
+
+		default:
+		periodo = "madrugada";
+		break;
+
+	    }
+        Console.WriteLine($"agora e {periodo}");
+	       
